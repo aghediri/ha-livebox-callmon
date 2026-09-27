@@ -1,0 +1,69 @@
+add_contact:
+  name: Add contact
+  description: Add a contact so the caller's name shows in the call log.
+  fields:
+    number:
+      name: Number
+      description: Phone number (any format).
+      required: true
+      example: "0162562353"
+      selector:
+        text:
+    name:
+      name: Name
+      description: Contact name.
+      required: true
+      example: "Maman"
+      selector:
+        text:
+    tag:
+      name: Tag
+      description: Category.
+      example: family
+      selector:
+        select:
+          options: [family, work, spam, other]
+    notes:
+      name: Notes
+      description: Optional notes.
+      selector:
+        text:
+
+edit_contact:
+  name: Edit contact
+  description: Edit an existing contact.
+  fields:
+    number:
+      name: Number
+      description: Existing number (identifies the contact).
+      required: true
+      selector:
+        text:
+    name:
+      name: Name
+      selector:
+        text:
+    tag:
+      name: Tag
+      selector:
+        select:
+          options: [family, work, spam, other]
+    notes:
+      name: Notes
+      selector:
+        text:
+    new_number:
+      name: New number
+      description: Change the contact's number.
+      selector:
+        text:
+
+delete_contact:
+  name: Delete contact
+  description: Delete a contact.
+  fields:
+    number:
+      name: Number
+      required: true
+      selector:
+        text:

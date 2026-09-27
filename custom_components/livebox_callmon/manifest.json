@@ -1,0 +1,11 @@
+{
+  "domain": "livebox_callmon",
+  "name": "Livebox Call Monitor",
+  "codeowners": ["@aghediri"],
+  "config_flow": true,
+  "documentation": "https://github.com/aghediri/ha-livebox-callmon",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/aghediri/ha-livebox-callmon/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}
